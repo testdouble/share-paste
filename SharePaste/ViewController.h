@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)share:(id)sender;
+
+@property (strong, nonatomic) UIPasteboard *pasteboard;
+
+@property (strong, nonatomic) IBOutlet UIButton *shareButton;
+@property (strong, nonatomic) IBOutlet UILabel *pastebufferLabel;
 
 @end
 
