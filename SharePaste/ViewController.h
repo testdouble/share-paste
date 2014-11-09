@@ -16,6 +16,7 @@
 @property (strong, nonatomic) PresentsPasteboardAsActivityItems *pasteboard;
 
 @property (strong, nonatomic) IBOutlet UIButton *shareButton;
+@property (strong, nonatomic) IBOutlet UIImageView *pastebufferImage;
 @property (strong, nonatomic) IBOutlet UILabel *pastebufferLabel;
 
 @end

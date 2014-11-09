@@ -25,11 +25,13 @@
   if (self.pasteboard.hasItems) {
     [self.shareButton setEnabled: YES];
     if (self.pasteboard.isImage) {
-      // hide the label
-      // set the image.
+      self.pastebufferLabel.hidden = YES;
+      self.pastebufferImage.image = self.pasteboard.asImage;
+      self.pastebufferImage.hidden = NO;
     } else {
-      // hide the image
+      self.pastebufferImage.hidden = YES;
       [self.pastebufferLabel setText: self.pasteboard.asString];
+      self.pastebufferLabel.hidden = NO;
     }
   } else {
     [self.shareButton setEnabled: NO];

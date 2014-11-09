@@ -25,11 +25,11 @@
 }
 
 - (BOOL) isImage {
-  return false;
+  return [[self.items firstObject] isKindOfClass: [UIImage class]];
 }
 
 - (UIImage*) asImage {
-  return nil;
+  return [self.items firstObject];
 }
 
 - (NSString*) asString {
@@ -37,10 +37,13 @@
 }
 
 - (NSArray*) items {
+//  NSLog([NSString stringWithFormat:@"%i", (int)self.pasteboard.numberOfItems]);
   NSArray *types = self.pasteboard.pasteboardTypes;
   NSMutableArray *items = [[NSMutableArray alloc] init];
   [types enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+//    NSLog(types[idx]);
     [items addObject:[self.pasteboard valueForPasteboardType:types[idx]]];
+//    NSLog(NSStringFromClass([[self.pasteboard valueForPasteboardType:types[idx]] class]));
   }];
   return items;
 }
