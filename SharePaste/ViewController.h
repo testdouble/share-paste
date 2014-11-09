@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PresentsPasteboardAsActivityItems.h"
 
 @interface ViewController : UIViewController
 
 - (IBAction)share:(id)sender;
 
-@property (strong, nonatomic) UIPasteboard *pasteboard;
+@property (strong, nonatomic) PresentsPasteboardAsActivityItems *pasteboard;
 
 @property (strong, nonatomic) IBOutlet UIButton *shareButton;
 @property (strong, nonatomic) IBOutlet UILabel *pastebufferLabel;

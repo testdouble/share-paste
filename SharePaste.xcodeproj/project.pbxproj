@@ -14,6 +14,7 @@
 		D0202B631A0FADBF0017A15A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0202B621A0FADBF0017A15A /* Images.xcassets */; };
 		D0202B661A0FADBF0017A15A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0202B641A0FADBF0017A15A /* LaunchScreen.xib */; };
 		D0202B721A0FADBF0017A15A /* SharePasteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0202B711A0FADBF0017A15A /* SharePasteTests.m */; };
+		D08EBC221A0FE46600BD7310 /* PresentsPasteboardAsActivityItems.m in Sources */ = {isa = PBXBuildFile; fileRef = D08EBC211A0FE46600BD7310 /* PresentsPasteboardAsActivityItems.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		D0202B6B1A0FADBF0017A15A /* SharePasteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharePasteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0202B701A0FADBF0017A15A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0202B711A0FADBF0017A15A /* SharePasteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharePasteTests.m; sourceTree = "<group>"; };
+		D08EBC211A0FE46600BD7310 /* PresentsPasteboardAsActivityItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentsPasteboardAsActivityItems.m; sourceTree = "<group>"; };
+		D08EBC231A0FE4A600BD7310 /* PresentsPasteboardAsActivityItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentsPasteboardAsActivityItems.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				D0202B621A0FADBF0017A15A /* Images.xcassets */,
 				D0202B641A0FADBF0017A15A /* LaunchScreen.xib */,
 				D0202B551A0FADBF0017A15A /* Supporting Files */,
+				D08EBC211A0FE46600BD7310 /* PresentsPasteboardAsActivityItems.m */,
+				D08EBC231A0FE4A600BD7310 /* PresentsPasteboardAsActivityItems.h */,
 			);
 			path = SharePaste;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				TargetAttributes = {
 					D0202B511A0FADBF0017A15A = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 825MF8C7NT;
 					};
 					D0202B6A1A0FADBF0017A15A = {
 						CreatedOnToolsVersion = 6.1;
@@ -221,6 +227,7 @@
 			files = (
 				D0202B5E1A0FADBF0017A15A /* ViewController.m in Sources */,
 				D0202B5B1A0FADBF0017A15A /* AppDelegate.m in Sources */,
+				D08EBC221A0FE46600BD7310 /* PresentsPasteboardAsActivityItems.m in Sources */,
 				D0202B581A0FADBF0017A15A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +421,7 @@
 				D0202B771A0FADBF0017A15A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0202B781A0FADBF0017A15A /* Build configuration list for PBXNativeTarget "SharePasteTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +430,7 @@
 				D0202B7A1A0FADBF0017A15A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

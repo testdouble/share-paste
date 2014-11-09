@@ -14,12 +14,23 @@
 
 @implementation ViewController
 
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  self.pasteboard = [[PresentsPasteboardAsActivityItems alloc] init];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  self.pasteboard = [UIPasteboard generalPasteboard];
-  if (self.pasteboard.numberOfItems > 0) {
+  
+  if (self.pasteboard.hasItems) {
     [self.shareButton setEnabled: YES];
-    [self.pastebufferLabel setText: self.pasteboard.string];
+    if (self.pasteboard.isImage) {
+      // hide the label
+      // set the image.
+    } else {
+      // hide the image
+      [self.pastebufferLabel setText: self.pasteboard.asString];
+    }
   } else {
     [self.shareButton setEnabled: NO];
     [self.pastebufferLabel setText: @"Nothing currently copied. Go copy something!"];
@@ -31,15 +42,9 @@
   self.pasteboard = nil;
 }
 
-- (IBAction)share:(id)sender {
-  NSArray *types = self.pasteboard.pasteboardTypes;
-  NSMutableArray *items = [[NSMutableArray alloc] init];
-  [types enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-    [items addObject:[self.pasteboard valueForPasteboardType:types[idx]]];
-  }];
-  
+- (IBAction)share:(id)sender {  
   [self presentViewController: [[UIActivityViewController alloc]
-                                initWithActivityItems: items
+                                initWithActivityItems: self.pasteboard.items
                                 applicationActivities:nil]
                      animated:YES
                    completion:nil];
