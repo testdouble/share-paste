@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VfZ-OJ-eXV">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VfZ-OJ-eXV">
                                 <rect key="frame" x="22" y="85" width="550" height="441"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="437-so-cFl">
@@ -56,7 +56,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Olx-7F-Te1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="1ey-Kz-Ggs"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Olx-7F-Te1" secondAttribute="bottom" constant="16" id="4Zn-78-63c"/>
                             <constraint firstItem="437-so-cFl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="9w8-YO-vgW"/>
                             <constraint firstAttribute="centerY" secondItem="VfZ-OJ-eXV" secondAttribute="centerY" id="Oec-hy-xMX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Olx-7F-Te1" secondAttribute="bottom" id="QXw-xf-uAR"/>
