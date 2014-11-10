@@ -37,13 +37,13 @@
 }
 
 - (NSArray*) items {
-//  NSLog([NSString stringWithFormat:@"%i", (int)self.pasteboard.numberOfItems]);
   NSArray *types = self.pasteboard.pasteboardTypes;
   NSMutableArray *items = [[NSMutableArray alloc] init];
-  [types enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-//    NSLog(types[idx]);
-    [items addObject:[self.pasteboard valueForPasteboardType:types[idx]]];
-//    NSLog(NSStringFromClass([[self.pasteboard valueForPasteboardType:types[idx]] class]));
+  [types enumerateObjectsUsingBlock:^(NSString* type, NSUInteger idx, BOOL *stop) {
+    id value = [self.pasteboard valueForPasteboardType:type];
+    if (value) {
+      [items addObject:value];
+    }
   }];
   return items;
 }
