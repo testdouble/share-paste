@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VfZ-OJ-eXV">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VfZ-OJ-eXV">
                                 <rect key="frame" x="22" y="85" width="550" height="441"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="437-so-cFl">
@@ -61,12 +61,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="VfZ-OJ-eXV" secondAttribute="trailing" constant="10" id="1Cl-Mi-0UL"/>
                             <constraint firstItem="Olx-7F-Te1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1000" id="1ey-Kz-Ggs"/>
                             <constraint firstItem="VfZ-OJ-eXV" firstAttribute="top" secondItem="Dmo-vm-SHH" secondAttribute="bottom" constant="20" id="6Rm-9l-fgP"/>
                             <constraint firstItem="437-so-cFl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1000" id="9w8-YO-vgW"/>
                             <constraint firstItem="Dmo-vm-SHH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Fpo-HB-n3u"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Olx-7F-Te1" secondAttribute="bottom" id="QXw-xf-uAR"/>
                             <constraint firstItem="Olx-7F-Te1" firstAttribute="top" secondItem="dG3-ve-bcw" secondAttribute="bottom" constant="20" id="QaC-ao-lKm"/>
+                            <constraint firstItem="VfZ-OJ-eXV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="R2b-Vl-Sih"/>
                             <constraint firstAttribute="centerX" secondItem="Olx-7F-Te1" secondAttribute="centerX" id="R8n-Rs-RIM"/>
                             <constraint firstItem="Dmo-vm-SHH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1000" id="YMM-1Q-Wld"/>
                             <constraint firstAttribute="trailingMargin" secondItem="437-so-cFl" secondAttribute="trailing" constant="-1000" id="Yow-fN-Wb7"/>
